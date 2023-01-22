@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Лианна Смородина](https://up.htmlacademy.ru/htmlcss/36/user/2257333).
-* Наставник: [Ольга Ветер] (https://htmlacademy.ru/profile/id73199).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
