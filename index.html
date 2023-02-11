@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navigation">
         <ul>
           <li>
             <a>
@@ -14,32 +15,32 @@
             </a>
           </li>
           <li>
-            <a>Главная</a>
+            <a class="navigation-current" href="#">Главная</a>
           </li>
           <li>
-            <a>О Седоне</a>
+            <a class="" href="#">О Седоне</a>
           </li>
           <li>
-            <a href="./catalog.html">Гостиницы</a>
+            <a class="" href="./catalog.html">Гостиницы</a>
           </li>
         </uL>
         <ul>
           <li>
-            <a href="#">
+            <a class="menu-misc search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="menu-misc favorite" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
               </a>
             </li>
           <li>
-            <a href="#">
+            <a class="button" href="#">
               Хочу сюда!
             </a>
           </li>
@@ -47,11 +48,12 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <h1 class="visually-hidden">
           Добро пожаловать в Седону
         </h1>
         <img src="./images/index/hero/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        <img class="stairs" src="./images/index/hero/stairs.svg" alt="Декоративная лесенка">
       </section>
       <section>
         <h2>
@@ -61,7 +63,7 @@
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
         <ul>
-          <li>
+          <li class="advantage accented-advantage">
             <h3>
               Настоящий городок
             </h3>
@@ -69,9 +71,9 @@
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </li>
-          <li>
+          <li class="advantage picture-advantage town">
           </li>
-          <li>
+          <li class="advantage">
             <h3>
               Небольшая площадь
             </h3>
@@ -79,7 +81,7 @@
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li>
+          <li class="advantage murky-advantage">
             <h3>
               Красивая дорога
             </h3>
@@ -87,7 +89,7 @@
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li>
+          <li class="advantage">
             <h3>
               Мало туристов
             </h3>
@@ -95,9 +97,9 @@
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
-          <li>
+          <li class="advantage picture-advantage bridge">
           </li>
-          <li>
+          <li class="advantage accented-advantage">
             <h3>
               Там есть мост дьявола
             </h3>
@@ -116,7 +118,7 @@
           Опытный персонал и качественное обслуживание!
         </p>
         <ul>
-          <li>
+          <li class="accomodation murky-accomodation">
             <h3>
               Жильё
             </h3>
@@ -125,7 +127,7 @@
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" width="76" height="72" fill="none"><path fill="#83B3D3" d="M30.12 65h16.06V41.2H30.12V65Zm2.91-20.9h10.14v18H33.03v-18Z"/><path fill="#83B3D3" d="m73.4 39.3 2.1-2.1-9.94-9.9V0H51.6v13.6L37.95 0 .5 37.2l2.1 2.1 7.84-7.8v37.6H6.42V72h64.16v-2.9h-5.12V31.5l7.93 7.8ZM62.54 69.1h-49.2V28.5l24.6-24.4 24.6 24.4v40.6Zm0-44.7-7.93-7.9V2.9h7.93v21.5Z"/><path fill="#83B3D3" d="M30.32 27.1c0 4.3 3.51 7.7 7.73 7.7a7.8 7.8 0 0 0 7.83-7.7c0-4.3-3.51-7.7-7.83-7.7a7.72 7.72 0 0 0-7.73 7.7Zm7.83-5a5 5 0 0 1 5.02 4.9c0 2.7-2.2 4.9-5.02 4.9a5 5 0 0 1-5.02-4.9c0-2.7 2.2-4.9 5.02-4.9ZM20.48 41.2h-3.01v3.9h3.01v-3.9ZM26.4 41.2h-3v3.9h3v-3.9ZM20.48 47.2h-3.01v3.9h3.01v-3.9ZM26.4 47.2h-3v3.9h3v-3.9ZM52.5 41.2h-3v3.9h3v-3.9ZM58.43 41.2h-3.01v3.9h3.01v-3.9ZM52.5 47.2h-3v3.9h3v-3.9ZM58.43 47.2h-3.01v3.9h3.01v-3.9Z"/></svg>
           </li>
-          <li>
+          <li class="accomodation">
             <h3>
               Еда
             </h3>
@@ -134,7 +136,7 @@
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" width="75" height="70" fill="none"><path fill="#83B3D3" d="M70.58 46.7H4.6C2.31 46.7.5 48.6.5 51v3.5c0 2.4 1.9 4.3 4.11 4.3h.9v1.1c0 5.5 4.31 10.1 9.63 10.1h44.7c5.32 0 9.63-4.5 9.63-10.1v-1.1h.9c2.31 0 4.12-1.9 4.12-4.3V51a4 4 0 0 0-3.91-4.3Zm-3.91 13.2c0 3.9-3.01 7-6.72 7H15.14c-3.71 0-6.72-3.2-6.72-7v-1.1h58.25v1.1Zm5.1-5.4c0 .7-.6 1.3-1.2 1.3H4.52c-.7 0-1.2-.6-1.2-1.3V51c0-.7.6-1.3 1.2-1.3h65.97c.7 0 1.2.6 1.2 1.3.1 0 .1 3.5.1 3.5ZM16.14 38.4l5.41 4.1 5.32-4.1 5.3 4.1 5.32-4.1 5.42 4.1 5.31-4.1 5.31 4.1 5.42-4.1 5.31 4.1 6.22-4.7-1.7-2.5-4.52 3.4-5.31-4.1-5.42 4.1-5.31-4.1-5.31 4.1-5.42-4.1-5.31 4.1-5.31-4.1-5.32 4.1-5.41-4.1-5.31 4.1-4.52-3.4-1.7 2.5 6.22 4.7 5.3-4.1ZM8.52 31.5h60.95c0-.6.1-1.2.1-1.9v-1.2C68.87 12.7 54.84 0 37.6 0 20.25 0 6.21 12.7 5.51 28.5v1.2c0 .6 0 1.2.1 1.8h2.91ZM37.59 3c15.64 0 28.47 11.3 29.08 25.5H8.52C9.12 14.4 21.95 3 37.59 3Z"/><path fill="#83B3D3" d="M37.6 17.3c1.05 0 1.9-.9 1.9-2s-.85-2-1.9-2c-1.06 0-1.91.9-1.91 2s.85 2 1.9 2ZM29.77 12.2c1.06 0 1.9-.9 1.9-2s-.84-2-1.9-2c-1.05 0-1.9.9-1.9 2s.85 2 1.9 2ZM45.31 12.2c1.05 0 1.9-.9 1.9-2s-.85-2-1.9-2c-1.05 0-1.9.9-1.9 2s.85 2 1.9 2Z"/></svg>
           </li>
-          <li>
+          <li class="accomodation murky-accomodation">
             <h3>
               Сувениры
             </h3>
@@ -153,11 +155,11 @@
         <p>
           Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
     </main>
     <footer>
-      <section>
+      <section class="subscribe">
         <h2>
           Подпишитесь на рассылку
         </h2>
@@ -168,38 +170,32 @@
           <label>
             <input type="email" name="newsletter-email" placeholder="Ваш e-mail">
           </label>
-          <button type="submit">Подписаться</button>
+          <button class="button button-secondary" type="submit">Подписаться</button>
         </form>
       </section>
 
       <section>
         <h2 class="visually-hidden">
-          Связяться с нами
+          Связаться с нами
         </h2>
         <ul>
-          <li>
+          <li class="social">
             <a href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">
-                ВКонтакте
-              </span>
+              <img src="./images/footer/VK.svg" width="24" height="14" alt="ВКонтакте">
             </a>
           </li>
-          <li>
+          <li class="social">
             <a href="https://t.me/htmlacademy ">
-              <span class="visually-hidden">
-                Телеграм
-              </span>
+              <img src="./images/footer/telegram.svg" width="18" height="16" alt="Телеграм">
             </a>
           </li>
-          <li>
+          <li class="social">
             <a href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">
-                YouTube
-              </span>
+              <img src="./images/footer/youtube.svg" width="22" height="17" alt="YouTube">
             </a>
           </li>
         </ul>
-        <a href="tel:+78128121212">
+        <a class="phone-number" href="tel:+78128121212">
           +7 (812) 812-12-12
         </a>
         <a href="https://htmlacademy.ru">
